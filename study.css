@@ -1,0 +1,108 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("bgis2.jpg");
+    background-size: 100%,100%;
+    background-repeat: no-repeat;
+}
+
+button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+}
+
+.row {
+    width: fit-content;
+    height: fit-content;
+}
+
+.leftColumn{
+    float: left;
+    text-align: center;
+    width: 25%;
+    padding: 10px;
+    margin-left: 5%;
+}
+
+#headContainer{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+}
+
+#head{
+    padding-top: 20px;
+}
+
+#headContainer p{
+    padding-bottom: 20px;
+}
+
+#headContainer+section{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+}
+#headContainer+section p{
+    padding-bottom: 0;
+    margin-bottom: 5px;
+    padding-top: 20px;
+}
+#headContainer+section a{
+    padding-bottom: 20px;
+    padding-top: 0;
+    margin-top: 5px;
+
+}
+audio{
+    padding-top: 20px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+
+.rightColumn{
+    float: left;
+    width: 60%;
+    padding: 10px;
+    margin-right: 5%;
+}
+.switch{
+    background-color: rgba(255, 255, 255, 1);
+    margin: 15px;
+    padding: 10px;
+    border: black solid 5px;
+}
+
+.switch td:first-child{
+    padding-right: 30px;
+}
+#txtContent{
+    width: 100%;
+}
+.content1{
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 15px;
+    padding: 10px;
+}
+.content2{
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 15px;
+    padding: 10px;
+}
+
+.photoTable{
+    text-align: center;
+    width: fit-content;
+    margin: 0px auto;
+}
+
+
