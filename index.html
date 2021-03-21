@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Freeman's Homepage</title>
+    <link id="myStyleSheet" rel="stylesheet" type="text/css" href="study.css">
+</head>
+<body>
+
+<script>
+    function swap(page){
+        switch (page)
+        {
+            case 1:
+                document.getElementById('head').setAttribute('src', 'study.png')
+                document.getElementById('headDescription').innerHTML="Freeman<br>buried in DDLs"
+                document.getElementById("audio").setAttribute('src', 'cafe.mp3');
+                document.getElementById('txtContent').innerHTML="Hello, I am MAN Furui, or you can call me freeman. Entering PolyU in 2019, I am currently a sophomore student majoring in Computing.This page is my mid-term project of COMP3421 Web Application Design and Development.My current goal is to understand the graphics engine more deeply and survive the courses of this semester. <br>Sadly having no achievement to show here, I'd like to share my current study life and hobbies on my homepage."
+
+                document.getElementById('description').innerHTML="<img src=\"open-book.png\" width=\"25px\"> currently reading"
+                document.getElementById('contentImg1').setAttribute('src','book1.jpg')
+                document.getElementById('contentImg2').setAttribute('src', 'book2.jpg');
+                document.getElementById('contact').setAttribute('href','19081789d@connect.polyu.hk')
+                document.getElementById('contactImg').setAttribute('src','email.png')
+                document.getElementById('contactImg').setAttribute('title','send email to me')
+                document.getElementById('contentDescription1').innerHTML="textbook of COMP2322 Computer Networking"
+                document.getElementById('contentDescription2').innerHTML="want to get involved in game industry through computer graphics in the future"
+
+                document.getElementById('myStyleSheet').setAttribute('href', 'study.css');
+                break;
+            case 2:
+                document.getElementById('head').setAttribute('src', 'game.png')
+                document.getElementById('headDescription').innerHTML="Red Prince<br>in Divinity Original Sin 2"
+                document.getElementById("audio").setAttribute('src', 'APOTS.mp3');
+                document.getElementById('txtContent').innerHTML="I enjoy single-player games over multiplayer games "+
+                    "and especially love games with action, turn-based and strategy elements." +
+                    "Perhaps falling in love with video games since I was very young is my main motivation to choose computing as major.<br>"+
+                    "My favorite game is Divinity Original Sin 2 (in fact, the current background music is derived from this game)" +
+                    "<a href='https://steamcommunity.com/id/LWLFreeman/'>steam personal page</a>"
+
+                document.getElementById('description').innerHTML="<img src=\"heart.png\" width=\"25px\"> recommand games:"
+                document.getElementById('contentImg1').setAttribute('src','game1.jpg')
+                document.getElementById('contentImg2').setAttribute('src', 'game2.jpg');
+                document.getElementById('contact').setAttribute('href','https://steamcommunity.com/id/LWLFreeman/')
+                document.getElementById('contactImg').setAttribute('src','steam.png')
+                document.getElementById('contactImg').setAttribute('title','steam personal page')
+                document.getElementById('contentDescription1').innerHTML="Complicated plot line, perfect world view, rich game content, crpg lovers must try it."
+                document.getElementById('contentDescription2').innerHTML="Unique turn-based strategy game"
+
+                document.getElementById('myStyleSheet').setAttribute('href', 'game.css');
+                break;
+        }
+    }
+</script>
+
+<header>
+    <h3>Freeman's Homepage</h3>
+</header>
+
+
+<section class="row">
+
+    <aside class="leftColumn">
+
+        <section id="headContainer">
+            <img id="head" src="study.png">
+            <p id="headDescription">
+                Freeman
+                <br>
+                buried in DDLs
+            </p>
+        </section>
+
+        <section>
+            <p>contact me:</p>
+            <a id="contact" href="19081789d@connect.polyu.hk" title="send email to me"><img id="contactImg" src="email.png" width="25px"></a>
+        </section>
+
+        <audio id="audio" controls autoplay>
+            <source id="audioSource" src="cafe.mp3" type="audio/mpeg">
+        </audio>
+
+    </aside>
+
+    <aside class="rightColumn">
+
+        <nav class="switch">
+            <table>
+                <tr>
+                    <td><p><em>Click on the following three buttons to learn more about me.</em></p></td>
+                    <td><button onclick="swap(1)"><img src="notebook.png" width="25px" title="study"></button></td>
+                    <td><button onclick="swap(2)"><img src="gamepad.png" width="25px" title="game"></button></td>
+                </tr>
+            </table>
+        </nav>
+
+        <section class="content1">
+            <h4><img src="user.png" width="25px"> self introduction</h4>
+            <p id="txtContent">
+                Hello, I am MAN Furui, or you can call me freeman. Entering PolyU in 2019, I am currently a sophomore student majoring in Computing.
+                This page is my mid-term project of COMP3421 Web Application Design and Development.
+                My current goal is to understand the graphics engine more deeply and survive the courses of this semester.
+                <br>
+                Sadly having no achievement to show here, I'd like to share my current study life and hobbies on my homepage.
+            </p>
+        </section>
+
+        <section class="content2">
+            <h4 id="description"><img src="open-book.png" width="25px"> currently reading</h4>
+            <div class="photoTable">
+                <table>
+                    <tr>
+                        <td ><img id="contentImg1" src="book1.jpg" width="200px"></td>
+                        <td ><img id="contentImg2" src="book2.jpg" width="200px"></td>
+                    </tr>
+
+                    <tr>
+                        <td width="300px"><p id="contentDescription1" >textbook of COMP2322 Computer Networking</p></td>
+                        <td width="300px"><p id="contentDescription2">want to get involved in game industry through computer graphics in the future</p></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </aside>
+
+
+</section>
+
+
+
+
+</body>
+</html>
